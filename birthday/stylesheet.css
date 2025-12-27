@@ -1249,7 +1249,7 @@ audio {
 	}
 }
 
-.Balloon-Border{
+.balloon-border{
 	position: fixed;
 	top:100%;
 	opacity: 0.5;
