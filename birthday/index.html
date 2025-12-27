@@ -1,97 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Happy Birthday</title>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
-<link rel="stylesheet" type="text/css" href="birthday/stylesheet.css">
-<link rel="stylesheet" type="text/css" href="birthday/loading.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="loading.css">
 
-<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 
-<link rel="stylesheet/less" href="birthday/cake.less">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+    <link rel="stylesheet/less" href="cake.less">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
 </head>
 
 <body>
 
-<div class="loading"></div>
+    <div class="loading"></div>
 
-<audio class="song" controls loop>
-    <source src="birthday/hbd.mp3">
-</audio>
+    <audio class="song" controls loop>
+        <source src="hbd.mp3">
+    </audio>
 
-<div class="balloons text-center" id="b1"><h2 style="color:#F2B300;">H</h2></div>
-<div class="balloons text-center" id="b2"><h2 style="color:#0719D4;">U</h2></div>
-<div class="balloons text-center" id="b3"><h2 style="color:#D14D39;">B</h2></div>
-<div class="balloons text-center" id="b4"><h2 style="color:#8FAD00;">B</h2></div>
-<div class="balloons text-center" id="b5"><h2 style="color:#8377E4;">Y</h2></div>
-<div class="balloons text-center" id="b6"><h2 style="color:#99C96A;">J</h2></div>
-<div class="balloons text-center" id="b7"><h2 style="color:#20CFB4;">I</h2></div>
+    <div class="balloons text-center" id="b1"><h2 style="color:#F2B300;">H</h2></div>
+    <div class="balloons text-center" id="b2"><h2 style="color:#0719D4;">U</h2></div>
+    <div class="balloons text-center" id="b3"><h2 style="color:#D14D39;">B</h2></div>
+    <div class="balloons text-center" id="b4"><h2 style="color:#8FAD00;">B</h2></div>
+    <div class="balloons text-center" id="b5"><h2 style="color:#8377E4;">Y</h2></div>
+    <div class="balloons text-center" id="b6"><h2 style="color:#99C96A;">J</h2></div>
+    <div class="balloons text-center" id="b7"><h2 style="color:#20CFB4;">I</h2></div>
 
-<img src="birthday/Balloon-Border.png" width="100%" class="balloon-border">
+    <img src="Balloon-Border.png" width="100%" class="balloon-border">
 
-<div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="banner.png" class="bannar">
+            </div>
+        </div>
 
-<div class="row">
-<div class="col-md-12 text-center">
-<img src="birthday/banner.png" class="bannar">
-</div>
-</div>
+        <div class="row cake-cover">
+            <div class="col-md-12">
+                <div class="cake">
+                    <div class="velas">
+                        <div class="fuego"></div><div class="fuego"></div><div class="fuego"></div><div class="fuego"></div><div class="fuego"></div>
+                    </div>
+                    <div class="cobertura"></div>
+                    <div class="bizcocho"></div>
+                </div>
+            </div>
+        </div>
 
-<div class="row cake-cover">
-<div class="col-md-12">
-<div class="cake">
-<div class="velas">
-<div class="fuego"></div><div class="fuego"></div><div class="fuego"></div><div class="fuego"></div><div class="fuego"></div>
-</div>
-<div class="cobertura"></div>
-<div class="bizcocho"></div>
-</div>
-</div>
-</div>
+        <div class="row message">
+            <div class="col-md-12">
+                <p>Today is a very special day…</p>
+                <p>because it’s the birthday</p>
+                <p>of the most beautiful soul in my life 💖</p>
+                <p>My hubby jii…</p>
+                <p>Shyam baba bless you 🙌🏻</p>
+                <p>stay happy, stay prosperous</p>
+                <p>achieve all your dreams</p>
+                <p>and stay healthy always 😊</p>
+                <p>Thank you for filling my world</p>
+                <p>with love, laughter and happiness</p>
+                <p>Happy Birthday my dear hubby jii ❤️</p>
+                <p>I love you 💖</p>
+            </div>
+        </div>
 
-<div class="row message">
-<div class="col-md-12">
-<p>Today is a very special day…</p>
-<p>because it’s the birthday</p>
-<p>of the most beautiful soul in my life 💖</p>
+        <div class="navbar navbar-fixed-bottom">
+            <div class="text-center">
+                <button class="btn btn-primary" id="turn_on">Turn On Lights</button>
+                <button class="btn btn-primary" id="play">Play Music</button>
+                <button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
+                <button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
+                <button class="btn btn-primary" id="cake_fadein">Most Delicious Cake</button>
+                <button class="btn btn-primary" id="light_candle">Light Candle</button>
+                <button class="btn btn-primary" id="wish_message">Happy Birthday</button>
+                <button class="btn btn-primary" id="story">Message</button>
+            </div>
+        </div>
+    </div>
 
-<p>My hubby jii…</p>
-<p>Shyam baba bless you 🙌🏻</p>
-<p>stay happy, stay prosperous</p>
-<p>achieve all your dreams</p>
-<p>and stay healthy always 😊</p>
-
-<p>Thank you for filling my world</p>
-<p>with love, laughter and happiness</p>
-
-<p>Happy Birthday my dear hubby jii ❤️</p>
-<p>I love you 💖</p>
-</div>
-</div>
-
-<div class="navbar navbar-fixed-bottom">
-<div class="text-center">
-<button class="btn btn-primary" id="turn_on">Turn On Lights</button>
-<button class="btn btn-primary" id="play">Play Music</button>
-<button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
-<button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
-<button class="btn btn-primary" id="cake_fadein">Most Delicious Cake</button>
-<button class="btn btn-primary" id="light_candle">Light Candle</button>
-<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
-<button class="btn btn-primary" id="story">Message</button>
-</div>
-</div>
-
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="birthday/effect.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="effect.js"></script>
 
 </body>
 </html>
