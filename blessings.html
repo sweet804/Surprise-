@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Divine Blessings</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat', sans-serif;
+}
+
+body{
+    background: radial-gradient(circle at top, #2b0017, #000);
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.image-box{
+    width:320px;
+    margin:auto;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 40px rgba(255, 180, 255, 0.7);
+    animation: glow 3s infinite alternate;
+}
+
+.image-box img{
+    width:100%;
+    display:block;
+}
+
+.message{
+    margin-top:25px;
+    color:#ffd9f0;
+    font-size:20px;
+    line-height:1.6;
+    padding:0 20px;
+    animation: slideUp 2s ease-in-out;
+    text-shadow:0 0 10px rgba(255,200,230,0.7);
+}
+
+.sparkle{
+    position:absolute;
+    width:6px;
+    height:6px;
+    background:white;
+    border-radius:50%;
+    animation: float 6s linear infinite;
+    opacity:0.7;
+}
+
+@keyframes glow{
+    from{ box-shadow:0 0 20px rgba(255,180,255,0.4); }
+    to{ box-shadow:0 0 50px rgba(255,180,255,0.9); }
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes slideUp{
+    from{transform:translateY(30px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+
+@keyframes float{
+    from{transform:translateY(100vh);}
+    to{transform:translateY(-10vh);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="image-box">
+        <img src="blessings.jpg" alt="Divine Blessing">
+    </div>
+
+    <div class="message">
+        🕉️✨<br>
+        My dear child,<br>
+        May your life always be filled with love, peace and happiness.<br>
+        May every dream of your heart come true,<br>
+        and may you always stay protected, strong and blessed.<br>
+        <b>My divine blessings are always with you.</b> 💖
+    </div>
+</div>
+
+<script>
+for(let i=0;i<40;i++){
+    let s=document.createElement("div");
+    s.className="sparkle";
+    s.style.left=Math.random()*100+"vw";
+    s.style.animationDelay=Math.random()*6+"s";
+    s.style.opacity=Math.random();
+    document.body.appendChild(s);
+}
+</script>
+
+</body>
+</html>

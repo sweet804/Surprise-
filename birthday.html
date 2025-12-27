@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday 🎂</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Montserrat',sans-serif;
+    background: radial-gradient(circle,#2b0014,#000);
+    overflow-x:hidden;
+    color:white;
+    text-align:center;
+}
+
+/* Lights */
+.lights{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    z-index:99;
+}
+.lights img{
+    width:40px;
+    animation: blink 1s infinite alternate;
+}
+@keyframes blink{
+    from{opacity:0.3}
+    to{opacity:1}
+}
+
+/* Banner */
+.banner{
+    margin-top:80px;
+}
+.banner img{
+    max-width:90%;
+}
+
+/* Main Title */
+h1{
+    font-family:'Sacramento',cursive;
+    font-size:4em;
+    color:#FFD700;
+    text-shadow:0 0 20px gold;
+    margin:20px 0;
+}
+
+/* Balloons */
+.balloons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:30px 0;
+}
+.balloons img{
+    width:100px;
+    animation: float 4s ease-in-out infinite;
+}
+@keyframes float{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-20px)}
+}
+
+/* Photo */
+.photo{
+    margin:40px 0;
+}
+.photo img{
+    width:260px;
+    border-radius:20px;
+    border:6px solid #ff5fa2;
+    box-shadow:0 0 30px #ff5fa2;
+}
+
+/* Message */
+.message{
+    max-width:600px;
+    margin:30px auto;
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:20px;
+    font-size:1.2em;
+}
+
+/* Back Button */
+.back{
+    position:fixed;
+    top:20px;
+    left:20px;
+    text-decoration:none;
+    color:white;
+    background:#e6007a;
+    padding:10px 18px;
+    border-radius:30px;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="back">⬅ Back</a>
+
+<!-- Lights -->
+<div class="lights">
+    <img src="Birthday-master/bulb_red.png">
+    <img src="Birthday-master/bulb_blue.png">
+    <img src="Birthday-master/bulb_green.png">
+    <img src="Birthday-master/bulb_yellow.png">
+    <img src="Birthday-master/bulb_pink.png">
+</div>
+
+<!-- Banner -->
+<div class="banner">
+    <img src="Birthday-master/banner.png">
+</div>
+
+<h1>Happy Birthday ❤️</h1>
+
+<!-- Balloons -->
+<div class="balloons">
+    <img src="Birthday-master/b1.png">
+    <img src="Birthday-master/b2.png">
+    <img src="Birthday-master/b3.png">
+    <img src="Birthday-master/b4.png">
+    <img src="Birthday-master/b5.png">
+    <img src="Birthday-master/b6.png">
+    <img src="Birthday-master/b7.png">
+</div>
+
+<!-- Photo -->
+<div class="photo">
+    <img src="Birthday-master/bd1.jpg">
+</div>
+
+<!-- Message -->
+<div class="message">
+    <p>
+        Today is not just your birthday…  
+        it is the celebration of the most beautiful soul in my life 💖  
+        Thank you for filling my world with love, laughter and happiness.  
+        I wish you all the smiles, all the dreams and all the love you deserve.  
+        🎂✨
+    </p>
+</div>
+
+</body>
+</html>
